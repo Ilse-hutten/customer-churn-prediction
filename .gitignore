@@ -1,0 +1,30 @@
+# VS Code settings
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.env
+.env
+.venv/
+venv/
+Pipfile.lock
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+data/
+*.csv
+*.xlsx
+
+# Model files
+*.pkl
+*.h5
+*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
