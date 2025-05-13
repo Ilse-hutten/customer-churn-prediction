@@ -36,7 +36,7 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 - **No tech support / online security** correlates strongly with churn.
 - **Month-to-month contract** users have the highest churn (~40%).
 
-<img src="visuals/churn_rate_service_contract.png" width="700"/>
+<img src="visuals/churn_rate_service_contract.png" width="900"/>
 
 ---
 
@@ -72,8 +72,7 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 
 - **Month-to-month contracts**, **short tenure**, and **lack of support services** are top churn indicators.
 
-![Feature Importance](visuals/feature_importance.png)
-
+<img src="visuals/feature_importance.png" width="900"/>
 ---
 
 ## 📁 Project Structure
