@@ -1,1 +1,8 @@
-shap
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+jupyter
+imbalanced-learn
