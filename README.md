@@ -26,8 +26,8 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 - **Customers without partners or dependents** are more likely to churn.
 - **Gender** has minimal effect on churn likelihood.
 
-<img src="visuals/churn_rate_demographics.png" width="500"/>
-<img src="visuals/customer_count_demographics.png" width="500"/>
+<img src="visuals/churn_rate_demographics.png" width="700"/>
+<img src="visuals/customer_count_demographics.png" width="700"/>
 
 
 ### Service & Contract Features
@@ -36,7 +36,7 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 - **No tech support / online security** correlates strongly with churn.
 - **Month-to-month contract** users have the highest churn (~40%).
 
-![Churn by Service & Contract Type](visuals/churn_rate_service_contract.png)
+<img src="visuals/churn_rate_service_contract.png" width="700"/>
 
 ---
 
@@ -71,7 +71,6 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 ## Feature Importance
 
 - **Month-to-month contracts**, **short tenure**, and **lack of support services** are top churn indicators.
-- **Electronic check payments** also flag higher churn risk.
 
 ![Feature Importance](visuals/feature_importance.png)
 
