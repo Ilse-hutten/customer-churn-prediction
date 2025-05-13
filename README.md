@@ -1,10 +1,10 @@
-# 📉 Telco Customer Churn Prediction
+# Telco Customer Churn Prediction
 
 A complete machine learning pipeline to predict customer churn for a telecom provider. The goal is to identify high-risk customers early and take action to reduce churn, boost retention, and increase customer lifetime value.
 
 ---
 
-## 🎯 Business Context
+## Business Context
 
 Churn is a critical issue in telecom—acquiring new customers is significantly more expensive than retaining existing ones. This project leverages customer demographics, contract types, and service usage patterns to build predictive models and uncover key churn drivers.
 
@@ -13,15 +13,16 @@ Churn is a critical issue in telecom—acquiring new customers is significantly 
 
 ---
 
-## 📊 Data Exploration & Key Insights
+## Data Exploration & Key Insights
 
 ### Churn Distribution
 The dataset is **imbalanced**, with ~73% of customers not churning. 
+
 <img src="visuals/churn_distribution.png" width="300"/>
 
 ### Demographic Features
 
-- **Senior citizens** churn significantly more (~40%) than non-seniors (~23%).
+- **Senior citizens** churn significantly more (~40%) than non-seniors (~23%), but are a smaller target group.
 - **Customers without partners or dependents** are more likely to churn.
 - **Gender** has minimal effect on churn likelihood.
 
@@ -39,15 +40,15 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 
 ---
 
-## 🔧 Preprocessing
+## Preprocessing
 
 - **Encoding:** One-hot encoding used for categorical variables (non-ordinal).
 - **Imbalance Handling:** SMOTE applied to balance churn classes.
-- **Scaling:** Applied where needed for ML algorithms.
+- **Scaling:** Applied for ML algorithms.
 
 ---
 
-## 🧠 Model Performance
+## Model Performance
 
 | Model                | ROC AUC | Accuracy | Precision | Recall | F1 Score |
 |---------------------|---------|----------|-----------|--------|----------|
@@ -58,7 +59,7 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 
 ### Highlights
 
-- 📈 **Best ROC AUC**: XGBoost (0.8318)
+- 📈 **Best ROC AUC**: XGBoost
 - 🧠 **Most Balanced**: XGBoost (good precision & recall)
 - 🎯 **Max Recall**: Logistic Regression (ideal if catching all churners is priority)
 - 💡 **Max Precision**: Gradient Boosting (useful when false positives are costly)
@@ -67,7 +68,7 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 
 ---
 
-## 🔍 Feature Importance
+## Feature Importance
 
 - **Month-to-month contracts**, **short tenure**, and **lack of support services** are top churn indicators.
 - **Electronic check payments** also flag higher churn risk.
@@ -77,6 +78,7 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 ---
 
 ## 📁 Project Structure
+```
 ├── data/ # Raw and processed datasets
 ├── models/ # Saved model artifacts
 ├── notebooks/ # EDA and modeling
@@ -93,24 +95,27 @@ The dataset is **imbalanced**, with ~73% of customers not churning.
 ├── main.py # Main entry point
 ├── requirements.txt # Dependencies
 └── README.md # Project documentation
-
+```
 ---
 
-## ⚙️ How to Run the Project
+## How to Run the Project
 
-### 🔁 Option 1: Run Full Pipeline
+### Option 1: Run Full Pipeline
 
 ```bash
-python main.py\``
+python main.py
+```
 
 ### Option 2: Explore in Jupyter Notebooks
 ```bash
 jupyter notebook notebooks/01_eda_and_cleaning.ipynb
-jupyter notebook notebooks/02_customer_churn_prediction_model.ipynb\``
+jupyter notebook notebooks/02_customer_churn_prediction_model.ipynb
+```
 
 Install dependencies with:
 ```bash
-pip install -r requirements.txt\``
+pip install -r requirements.txt
+```
 
 ## Next Steps
 - Add SHAP or LIME for explainability.
